@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <header>
+        <partial name="Shared/NavMenuPartial" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/MyRazorApp.styles.css" asp-append-version="true" />
+
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        2023 - Powered by <a href="https://victorschlindwein.com.br">Victor Schlindwein's Company</a>
+    </footer>
+
+@RenderSection("scripts", false)
+</body>
+</html>
